@@ -1,6 +1,6 @@
 import React from '../../node_modules/react'
-import cssObj from '@/css/index.css'
-console.log(cssObj);
+import cssObj from '@/css/index.scss'
+import 'bootstrap/dist/css/bootstrap.css'
 
 export default class Animal extends React.Component{
     constructor(){
@@ -11,6 +11,9 @@ export default class Animal extends React.Component{
     }
     render(){
         console.log("conponent3 ",this.state.msg);
-        return <div id="COMP3" className={cssObj.class1} style={{color:'gray'}}> this is component 3 -- {this.props.name} -- {this.props.age} -- {this.props.gender}</div>
+        return <div id="COMP3" className={cssObj.class1} style={{color:'gray'}}> 
+        this is component 3 -- {this.props.name} -- {this.props.age} -- {this.props.gender}
+        <button className={[bootcss.btn ,bootcss['btn-primary']].join(' ')}>button</button>
+        </div>
     }
 }
