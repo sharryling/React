@@ -1,4 +1,3 @@
-console.log("hello!~112");
 import React from 'react'
 import ReactDOM from 'react-dom'
 //const myh1 = React.createElement('h1', null, 'this is a big H')
