@@ -23,13 +23,16 @@ export default class Component4 extends React.Component {
     }
     render() {
         return <div><h1>I'm component4</h1>
-            {this.state.ArrObj.map(item =><Component5 {...item} key={item.id}></Component5>
-                /* <div key={item.id}>
-                    <h2>{item.name}</h2>
-                    <p>{item.content}</p>
-                </div> */
-
-            )}
+            {this.state.ArrObj.map(item =><Component5 {...item} key={item.id}></Component5>)}
+            <button onClick={()=>{this.show()}}>button</button>
         </div>
+    }
+    show=()=>{
+        console.log(this.state.ArrObj)
+        this.setState({
+            showFlag:true
+        },function(){
+            console.log("gogo~")
+        })
     }
 }
