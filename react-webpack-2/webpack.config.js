@@ -19,7 +19,7 @@ module.exports = {
     },
     resolve:{
         extensions:['.js','.jsx','.json'],
-        alias:{
+        alias:{  //表示别名
             '@':path.join(__dirname,'./src')
         }
     },

@@ -14,7 +14,10 @@ export default class Animal extends React.Component{
         return <div id="COMP3" className={cssObj.class1} style={{color:'gray'}}> 
         this is component 3 -- {this.props.name} -- {this.props.age} -- {this.props.gender}
         {/* <button className={[bootcss.btn ,bootcss['btn-primary']].join(' ')}>button</button> */}
-        <button className="btn btn-primary">button</button>
+        <button className="btn btn-primary" onClick={()=>{this.show()}}>button</button>
         </div>
+    }
+    show(){
+        console.log("onclick ing..")
     }
 }
